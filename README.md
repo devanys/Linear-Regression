@@ -2,13 +2,13 @@
 
 <img width="1067" height="648" alt="image" src="https://github.com/user-attachments/assets/d95d9098-1d86-40d2-96d7-6ad50def20e1" />
 
-> A pure Python implementation of Linear Regression — built entirely without NumPy, PyTorch, or any ML library. Covers SGD, K-Fold Cross Validation, Early Stopping, and Learning Rate Schedulers.
+> A implementation of Linear Regression — Covers SGD, K-Fold Cross Validation, Early Stopping, and Learning Rate Schedulers.
 
 ---
 
 ## 📌 Overview
 
-This project demonstrates the **mathematical foundations of machine learning** by implementing Linear Regression and its training pipeline from first principles. Every component — from gradient computation to cross-validation — is coded by hand using only Python's standard library.
+This project demonstrates the **mathematical foundations of machine learning** by implementing Linear Regression and its training pipeline from first principles. Every component — from gradient computation to cross-validation.
 
 ---
 
