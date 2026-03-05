@@ -1,5 +1,7 @@
 # 📉 Linear Regression
 
+<img width="1067" height="648" alt="image" src="https://github.com/user-attachments/assets/d95d9098-1d86-40d2-96d7-6ad50def20e1" />
+
 > A pure Python implementation of Linear Regression — built entirely without NumPy, PyTorch, or any ML library. Covers SGD, K-Fold Cross Validation, Early Stopping, and Learning Rate Schedulers.
 
 ---
@@ -20,6 +22,8 @@ $$\hat{y} = w \cdot x + b$$
 
 The goal is to find $w$ and $b$ such that $\hat{y}$ is as close to the true label $y$ as possible.
 
+<img width="518" height="201" alt="image" src="https://github.com/user-attachments/assets/aa71b278-2f73-4aef-9c71-282bf25aefcc" />
+
 ---
 
 ### 2. Loss Function — Mean Squared Error (MSE)
@@ -29,6 +33,8 @@ Given $N$ training samples, the loss is defined as:
 $$\mathcal{L}(w, b) = \frac{1}{N} \sum_{i=1}^{N} \left( \hat{y}_i - y_i \right)^2$$
 
 MSE penalizes large errors more heavily due to the squaring, making it sensitive to outliers but easy to differentiate.
+
+<img width="383" height="248" alt="image" src="https://github.com/user-attachments/assets/71f2484b-ebc3-45cc-8c79-7c6d32dd1824" />
 
 ---
 
@@ -46,6 +52,8 @@ $$\frac{\partial \mathcal{L}}{\partial w} = \frac{1}{N} \sum_{i=1}^{N} (\hat{y}_
 
 $$\frac{\partial \mathcal{L}}{\partial b} = \frac{1}{N} \sum_{i=1}^{N} (\hat{y}_i - y_i)$$
 
+<img width="516" height="342" alt="image" src="https://github.com/user-attachments/assets/f7fa621f-b019-4cee-bb86-bdc4a7887a4d" />
+
 ---
 
 ### 4. Stochastic Gradient Descent (SGD)
@@ -62,6 +70,8 @@ In **mini-batch SGD**, gradients are computed over a random subset (batch) of $m
 
 $$\frac{\partial \mathcal{L}}{\partial w} \approx \frac{1}{m} \sum_{i \in \text{batch}} (\hat{y}_i - y_i) \cdot x_i$$
 
+<img width="547" height="274" alt="image" src="https://github.com/user-attachments/assets/f79de7e7-66c5-41e1-b8e9-9d8d560fff21" />
+
 ---
 
 ### 5. Evaluation Metrics
@@ -73,6 +83,10 @@ $$\text{RMSE} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (\hat{y}_i - y_i)^2}$$
 #### Mean Absolute Error (MAE)
 
 $$\text{MAE} = \frac{1}{N} \sum_{i=1}^{N} \left| \hat{y}_i - y_i \right|$$
+
+
+<img width="459" height="334" alt="image" src="https://github.com/user-attachments/assets/3a37def5-4169-449a-9204-85538e5fbf71" />
+
 
 ---
 
@@ -91,6 +105,12 @@ $$\sigma_{\text{val}} = \sqrt{\frac{1}{K} \sum_{k=1}^{K} \left( \mathcal{L}_{\te
 After training all $K$ folds, the final model is obtained by averaging their weights:
 
 $$w_{\text{ensemble}} = \frac{1}{K} \sum_{k=1}^{K} w^{(k)}, \qquad b_{\text{ensemble}} = \frac{1}{K} \sum_{k=1}^{K} b^{(k)}$$
+
+
+<img width="671" height="672" alt="image" src="https://github.com/user-attachments/assets/eacda5d3-e96f-40ca-aa0a-9fe1533ea2d2" />
+
+<img width="563" height="295" alt="image" src="https://github.com/user-attachments/assets/fb240ee1-c97a-450f-b9a5-33bdc179add4" />
+
 
 ---
 
@@ -117,6 +137,9 @@ $$\text{Gap} = \left| \mathcal{L}_{\text{train}} - \mathcal{L}_{\text{val}} \rig
 | $< 0.05$ | Good fit ✅ |
 | $0.05 - 0.20$ | Slight overfitting ⚠️ |
 | $> 0.20$ | Significant overfitting ❌ |
+
+
+<img width="673" height="517" alt="image" src="https://github.com/user-attachments/assets/c9e26454-fbe5-4a33-83dc-a52c4cdeacd0" />
 
 ---
 
@@ -190,6 +213,10 @@ The model is expected to recover these values through training.
 | LR Step Decay | ~0.15 |
 | LR Exp Decay | ~0.15 |
 | LR Cosine Annealing | ~0.15 |
+
+
+<img width="363" height="775" alt="image" src="https://github.com/user-attachments/assets/b2c562b0-cf00-40a7-8854-512d5a1dd3e1" />
+
 
 ---
 
